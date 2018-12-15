@@ -1,0 +1,86 @@
+{
+  "_from": "@loopback/rest-explorer@^1.1.3",
+  "_id": "@loopback/rest-explorer@1.1.3",
+  "_inBundle": false,
+  "_integrity": "sha512-i+Af/SvNGpvbHdUzhV+qnIwBSeJNtQmWFcod/TBgNQRXnLbKPVeZby3LQlszMSO5tQuxfwcOXw0MHMROjRJ9HQ==",
+  "_location": "/@loopback/rest-explorer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@loopback/rest-explorer@^1.1.3",
+    "name": "@loopback/rest-explorer",
+    "escapedName": "@loopback%2frest-explorer",
+    "scope": "@loopback",
+    "rawSpec": "^1.1.3",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@loopback/rest-explorer/-/rest-explorer-1.1.3.tgz",
+  "_shasum": "f37228284eb5193871448302741bf19ecee32e93",
+  "_spec": "@loopback/rest-explorer@^1.1.3",
+  "_where": "/Users/DanJarvis/projects/loopy/user-service",
+  "author": {
+    "name": "IBM"
+  },
+  "bugs": {
+    "url": "https://github.com/strongloop/loopback-next/issues"
+  },
+  "bundleDependencies": false,
+  "copyright.owner": "IBM Corp.",
+  "dependencies": {
+    "@loopback/context": "^1.3.0",
+    "@loopback/core": "^1.1.2",
+    "@loopback/rest": "^1.5.0",
+    "ejs": "^2.6.1",
+    "swagger-ui-dist": "^3.20.0"
+  },
+  "deprecated": false,
+  "description": "LoopBack's API Explorer",
+  "devDependencies": {
+    "@loopback/build": "^1.0.2",
+    "@loopback/testlab": "^1.0.2",
+    "@types/ejs": "^2.6.0",
+    "@types/node": "^10.1.1"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist/src",
+    "dist/index*",
+    "src",
+    "templates"
+  ],
+  "gitHead": "1def5218441a398c2a74d0d6866804c81ee0210c",
+  "homepage": "https://github.com/strongloop/loopback-next#readme",
+  "keywords": [
+    "LoopBack",
+    "Explorer",
+    "Swagger"
+  ],
+  "license": "MIT",
+  "name": "@loopback/rest-explorer",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongloop/loopback-next.git"
+  },
+  "scripts": {
+    "build": "lb-tsc es2017 --outDir dist",
+    "build:apidocs": "lb-apidocs",
+    "clean": "lb-clean loopback-explorer*.tgz dist package api-docs",
+    "pretest": "npm run build",
+    "test": "lb-mocha \"dist/test/**/*.js\"",
+    "verify": "npm pack && tar xf loopback-explorer*.tgz && tree package && npm run clean"
+  },
+  "version": "1.1.3"
+}
