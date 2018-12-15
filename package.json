@@ -1,5 +1,5 @@
 {
-  "name": "@loopback/rest-explorer-auth",
+  "name": "rest-explorer-auth",
   "version": "1.1.3",
   "description": "LoopBack's API Explorer with Authentication Header",
   "engines": {
